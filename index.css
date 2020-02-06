@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
+/* ------------------------------------------------------------  */
+
+
+
+/*--------------------------------------------------------------*/
+
+body{
+  background-color: #e3e3e3;
+}
+
+header {
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  border-bottom: 3px solid black;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: block;
+  }
+}
+
+li, a, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  text-decoration: none;
+}
+
+.logo0 {
+  cursor: pointer;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .logo0 {
+display: block;
+margin-left: auto;
+margin-right: auto;
+  }
+}
+
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+@media (max-width: 500px) {
+  .navlinks {
+    display: grid;
+    text-align: center;
+  }
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+@media (max-width: 500px) {
+  .navlinks li {
+    padding: 5px;
+  }
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+  color: #41b19d;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(2.4,41.6,55.3,1);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #41b19d;
+  color: rgba(2.4,41.6,55.3,1);
+}
+
+/*@media (max-width: 500px) {
+cta {
+  display: block;
+  margin: auto;
+}*/
+
+h1 {
+  font-size: 2.5rem;
+  color: #3faf9d;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 650;
+  padding: 40px 10px 20px 10px;
+}
+
+.showtext {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 10px 10px 20px 10px;
+}
+
+.showcase {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 40px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  outline: none;
+  margin-bottom: 60px;
+}
+
+.main {
+ display: flex;
+ justify-content: space-around;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 940px) {
+  .main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+  }
+}
+
+.section {
+  border: 3px solid black;
+  border-radius: 3%;
+}
+
+footer {
+  margin-top: 60px;
+  background-color: rgba(2.4,41.6,55.3,1);
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 40px 0px 0px 75px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont {
+  padding: 40px 75px 0px 0px;
+}
+
+.stay {
+  padding: 40px 0px 0px 75px;
+}
+
+@media (max-width: 500px) {
+  .stay {
+    display: none;
+  }
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+}
+
+.logo2 {
+  padding: 0px 6%;
+}
+
+.footlinks{
+  list-style: none;
+}
+
+.footlinks li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+
+.logo2 {
+  cursor: pointer;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.copyright {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+
+/*     About Page      */
+
+.showcase2 {
+width: 100%;
+position: relative;
+text-align: center;
+color: #ffffff;
+font-family: 'Roboto', sans-serif;
+font-size: 1.5rem;
+}
+
+.showpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+font-size: 4rem;
+padding-bottom: 30px;
+}
+
+h4 {
+font-size: 4rem;
+font-family: 'Roboto', sans-serif;
+color: black;
+padding-bottom: 10px;
+}
+
+.stay,.cont {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgb(0, 0, 0, 0.6);
+border-radius: 3px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    .container2 {
+      display: block;
+      }
+  }
+  
+.container3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .container3 {
+    display: block;
+    }
+}
+  
+.team,.exercise {
+ padding: 0px 40px 40px 40px;
+ max-width: 100%;
+ height: auto;
+}
+
+.midtext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  padding: 0px 40px 0px 40px;
+}
+
+h4 {
+  color: #3faf9d;
+}
